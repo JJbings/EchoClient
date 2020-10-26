@@ -16,15 +16,22 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             String echoString;
             String response;
+//            do {
+//                System.out.println("Enter string to be echoed: ");
+//                echoString = scanner.nextLine();
+//                stringToEcho.println(echoString);
+//                if (!echoString.equals("exit")) {
+//                    response = echos.readLine();
+//                    System.out.println(response);
+//                }
+//            } while (!echoString.equals("exit"));
             do {
                 System.out.println("Enter string to be echoed: ");
                 echoString = scanner.nextLine();
+
                 stringToEcho.println(echoString);
-                if (!echoString.equals("exit")) {
-                    response = echos.readLine();
-                    System.out.println(response);
-                }
             } while (!echoString.equals("exit"));
+
 
         } catch (IOException e) {
             System.out.println("Client error " + e.getMessage());
